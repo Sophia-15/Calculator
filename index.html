@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <p id="input"  ></p>
+        <div class="numbers">
+            <button id="7" onclick="insert('7')">7</button>
+            <button id="8" onclick="insert('8')">8</button>
+            <button id="9" onclick="insert('9')">9</button>
+            <button class="operators" id="add" onclick="insert('+')">+</button>
+        </div>
+        <div class="numbers">
+            <button id="4" onclick="insert('4')">4</button>
+            <button id="5" onclick="insert('5')">5</button>
+            <button id="6" onclick="insert('6')">6</button>
+            <button class="operators" id="subtract" onclick="insert('-')">-</button>
+        </div>
+        <div class="numbers">
+            <button id="1" onclick="insert('1')">1</button>
+            <button id="2" onclick="insert('2')">2</button>
+            <button id="3" onclick="insert('3')">3</button>
+            <button class="operators" id="multiply" onclick="insert('*')">&times;</button>
+        </div>
+        <div class="numbers">
+            <button id="0" onclick="insert('0')">0</button>
+            <button id="point" onclick="insert('.')">.</button>
+            <button id="clear" onclick="apagar()">C</button>
+            <button class="operators" id="divide" onclick="insert('/')">&divide;</button>
+        </div>
+        <div class="equal">
+            <button id="result" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
